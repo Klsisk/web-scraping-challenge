@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+   <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+
+      <!--Add a button that links to scrape -->
+      <a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a>
+    </div>
+
+    <!-- Add Latest Mars News -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <h2>Latest Mars News</h2>
+            <h5>{{news_title}}</h5>
+            <p>{{news_p}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+
+        <!-- Featured Mars Image -->
+        <div class="col-lg-8 col-md-8 col-sm-12">
+          <h2>Featured Mars Image</h2>
+          <img src="{{featured_image_url}}" style="max-width:100%; max-height: auto;" alt="Featured Mars Image">
+        </div>
+
+        <!-- Mars Table -->
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h2>Mars Facts</h2>
+          <table>{{mars_facts_table}}</table>
+        </div>
+
+    </div>      
+  </div>
+  </div>
+</body>
