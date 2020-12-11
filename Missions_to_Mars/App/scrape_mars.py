@@ -6,7 +6,7 @@ import requests
 
 def init_browser():
     #Choose the executable path to driver 
-    path = r'C:\Users\klsis\.wdm\drivers\chromedriver\win32\87.0.4280.88\chromedriver.exe'
+    path = 'chromedriver'
     return Browser('chrome', executable_path=path, headless=False)
 
 ## MARS DATA FROM VARIOUS WEBSITES ##
@@ -14,7 +14,6 @@ def scrape():
     # Initialize browser 
     browser = init_browser()
     mars_data = {}
-    
     
     
     #Visit Nasa News site 
@@ -57,7 +56,7 @@ def scrape():
 
     #Use the base url to create an absolute url
     featured_image_url = f'https://www.jpl.nasa.gov{image_url}'
-    mars_data["featured_image_url"] = featured_image_url
+    mars_data['featured_image_url'] = featured_image_url
     
     
     
@@ -82,7 +81,7 @@ def scrape():
 
     #Strip unwanted newlines to clean up the table
     html_table.replace('\n', '')
-    mars_data["mars_facts_table"] = html_table
+    mars_data['mars_facts_table'] = html_table
 
 
 
@@ -119,7 +118,7 @@ def scrape():
 
         #Finally, we navigate backwards
         browser.back()
-        mars_data["hemisphere_image_urls"] = hemisphere_image_urls
+        mars_data['hemisphere_image_urls'] = hemisphere_image_urls
 
     #Quite the browser after scraping
     browser.quit()
@@ -128,3 +127,6 @@ def scrape():
 
     #Return results
     return mars_data
+    
+
+   
