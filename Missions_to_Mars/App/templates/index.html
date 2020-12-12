@@ -41,7 +41,7 @@
         <!-- Mars Table -->
         <div class="col-lg-4 col-md-4 col-sm-12">
           <h3>Mars Facts</h3>
-          <table>{{mars.mars_facts_table}}</table>
+          <table>{{mars.mars_facts_table | safe}}</table>
         </div>
       </div>
     </div>
@@ -52,7 +52,7 @@
         <div class="col-md-12">
           <p><h2 style="text-align:center">Mars Hemispheres</h2></p>
 
-          {% for hemisphere in mars.hemispheres_image_urls %}
+          {% for hemisphere in mars.hemisphere_image_urls %}
           <div class = "col-md-6">
             <div class = "thumbnail">
               <img src = "{{hemisphere.img_url}}">

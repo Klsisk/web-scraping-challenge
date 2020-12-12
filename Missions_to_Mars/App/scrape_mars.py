@@ -6,7 +6,7 @@ import requests
 
 def init_browser():
     #Choose the executable path to driver 
-    path = 'chromedriver'
+    path = 'chromedriver.exe'
     return Browser('chrome', executable_path=path, headless=False)
 
 ## MARS DATA FROM VARIOUS WEBSITES ##
@@ -19,6 +19,7 @@ def scrape():
     #Visit Nasa News site 
     url = 'https://mars.nasa.gov/news'
     browser.visit(url)
+   
 
     # Scrape page into Soup
     html = browser.html
