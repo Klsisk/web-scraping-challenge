@@ -1,4 +1,4 @@
-# Web Scraping - Mission to Mars
+# Web Scraping : Mission to Mars
 
 ## Step 1 - Scraping
 
