@@ -38,4 +38,6 @@ code from above and return one Python Dictionary containing all of the scraped d
 - Create a root route / that will query the Mongo database and pass the Mars Data into an HTML template to display the data
 - Create a template HTML file called index.html that will take the Mars Data Dictionary and display all of the data in the appropriate HTML elements
 
+![image](https://user-images.githubusercontent.com/69765842/103469231-19b51980-4d30-11eb-8d77-7576af36ecb0.png)
+
 
