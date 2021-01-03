@@ -15,6 +15,14 @@
 - Visit the Mars Facts webpage and use Pandas to scrape the table containing facts about the planet including Diameter, Mass, etc.
 - Use Pandas to convert the data to a HTML table string
 
+![image](https://user-images.githubusercontent.com/69765842/103469145-0786ab80-4d2f-11eb-948c-d85a050009c5.png)
+
+![image](https://user-images.githubusercontent.com/69765842/103469167-43ba0c00-4d2f-11eb-9418-ffa64f87b76b.png)
+
+![image](https://user-images.githubusercontent.com/69765842/103469174-5e8c8080-4d2f-11eb-9bb7-131a5c8f80cc.png)
+
+![image](https://user-images.githubusercontent.com/69765842/103469182-7b28b880-4d2f-11eb-85e8-84f3f219e646.png)
+
 ### Mars Hemispheres
 - Visit the USGS Astrogeology site to obtain high resolution images for each of Mar's hemispheres
 - Save both the image URL string for the full resolution hemisphere image, and the Hemisphere title containing the hemisphere name.
